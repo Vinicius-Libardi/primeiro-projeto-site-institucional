@@ -67,3 +67,251 @@ details nav a {
 details nav a:hover {
     color: #2c6e6f;
 }
+
+/* BANNER */
+
+#banner {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 5%;
+    background-color: #e8f3f3;
+}
+
+#banner h2 {
+    max-width: 800px;
+    margin-bottom: 30px;
+    font-size: 42px;
+    color: #2c6e6f;
+}
+
+#banner img {
+    width: 100%;
+    max-width: 900px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* DESCRIÇÃO */
+
+#descricao {
+    padding: 80px 10%;
+}
+
+#descricao h2 {
+    font-size: 32px;
+    color: #2c6e6f;
+    margin-bottom: 20px;
+}
+
+#descricao h2:nth-of-type(2) {
+    margin-top: 60px;
+}
+
+#descricao h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    margin-top: 10px;
+    background-color: #2c6e6f;
+    border-radius: 5px;
+}
+
+#descricao p {
+    max-width: 900px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* SERVIÇOS */
+
+#servicos {
+    padding: 80px 10%;
+    background-color: #f5fafa;
+}
+
+#servicos > h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #2c6e6f;
+    margin-bottom: 50px;
+}
+
+.servicos-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.servico {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servico:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.servico h3 {
+    font-size: 22px;
+    color: #2c6e6f;
+    margin-bottom: 15px;
+}
+
+.servico p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* DIFERENCIAIS */
+
+#diferenciais {
+    padding: 80px 10%;
+    background-color: #ffffff;
+}
+
+#diferenciais > h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #2c6e6f;
+    margin-bottom: 50px;
+}
+
+#diferenciais ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+}
+
+#diferenciais li {
+    padding: 30px;
+    background-color: #f5fafa;
+    border-radius: 12px;
+    border: 1px solid #e0eeee;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#diferenciais li:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+#diferenciais h3 {
+    font-size: 22px;
+    color: #2c6e6f;
+    margin-bottom: 15px;
+}
+
+#diferenciais p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* FAQ */
+
+#perguntas {
+    padding: 80px 10%;
+    background-color: #f5fafa;
+}
+
+#perguntas > h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #2c6e6f;
+    margin-bottom: 50px;
+}
+
+#perguntas details {
+    max-width: 900px;
+    margin: 0 auto 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease;
+}
+
+#perguntas details[open] {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+#perguntas summary {
+    padding: 20px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c6e6f;
+    cursor: pointer;
+    list-style: none;
+}
+
+#perguntas summary::-webkit-details-marker {
+    display: none;
+}
+
+#perguntas summary::after {
+    content: "+";
+    float: right;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+#perguntas details[open] summary::after {
+    content: "−";
+}
+
+#perguntas details p {
+    padding: 0 25px 20px;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #2c6e6f;
+    color: #ffffff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 60px 10%;
+}
+
+.footer-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-container p {
+    margin-bottom: 10px;
+}
+
+.footer-container a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
