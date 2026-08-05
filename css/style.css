@@ -6,6 +6,19 @@
     box-sizing: border-box;
 }
 
+:root {
+    --cor-principal: #2c6e6f;
+
+    --cor-fundo: #f5fafa;
+
+    --cor-texto: #555;
+
+    --cor-card: #ffffff;
+
+    --sombra: 0 5px 20px rgba(0, 0, 0, .08);
+
+    --borda: 12px;
+}
 
 /* ESTILOS GERAIS */
 
@@ -136,7 +149,7 @@ details nav a:hover {
     background-color: #f5fafa;
 }
 
-#servicos > h2 {
+#servicos>h2 {
     text-align: center;
     font-size: 36px;
     color: #2c6e6f;
@@ -181,7 +194,7 @@ details nav a:hover {
     background-color: #ffffff;
 }
 
-#diferenciais > h2 {
+#diferenciais>h2 {
     text-align: center;
     font-size: 36px;
     color: #2c6e6f;
@@ -228,7 +241,7 @@ details nav a:hover {
     background-color: #f5fafa;
 }
 
-#perguntas > h2 {
+#perguntas>h2 {
     text-align: center;
     font-size: 36px;
     color: #2c6e6f;
@@ -314,4 +327,203 @@ footer {
     text-align: center;
     padding: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* CONTATO */
+
+#contato {
+
+    padding: 80px 10%;
+
+    background: #ffffff;
+
+}
+
+#contato h2 {
+
+    text-align: center;
+
+    font-size: 36px;
+
+    color: var(--cor-principal);
+
+    margin-bottom: 50px;
+
+}
+
+.contato-container {
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 40px;
+
+}
+
+
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+input,
+textarea {
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+}
+
+button {
+
+    padding: 15px;
+
+    background: var(--cor-principal);
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+button:hover {
+
+    opacity: .9;
+
+}
+
+.whatsapp {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 15px 25px;
+
+    background: #25D366;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    transition: .3s;
+
+}
+
+.whatsapp:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+/* ==========================
+   RESPONSIVIDADE
+========================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #banner h2 {
+        font-size: 32px;
+    }
+
+    #banner img {
+        height: 350px;
+    }
+
+    .servicos-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #diferenciais ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    #banner {
+        padding: 50px 20px;
+    }
+
+    #banner h2 {
+        font-size: 26px;
+    }
+
+    #banner img {
+        height: 220px;
+    }
+
+    #descricao {
+        padding: 50px 20px;
+    }
+
+    #descricao h2 {
+        font-size: 24px;
+    }
+
+    #descricao p {
+        font-size: 16px;
+    }
+
+    .servicos-container {
+        grid-template-columns: 1fr;
+    }
+
+    #diferenciais ul {
+        grid-template-columns: 1fr;
+    }
+
+    #perguntas summary {
+        font-size: 16px;
+    }
+
+    #perguntas p {
+        font-size: 15px;
+    }
+
+    .contato-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        text-align: center;
+    }
+
+    .footer-container h2 {
+        font-size: 22px;
+    }
 }
