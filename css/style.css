@@ -94,14 +94,14 @@ details nav a:hover {
     background-color: #e8f3f3;
 }
 
-#banner h2 {
+#banner-titulo {
     max-width: 800px;
     margin-bottom: 30px;
     font-size: 42px;
     color: #2c6e6f;
 }
 
-#banner img {
+#banner-img {
     width: 100%;
     max-width: 900px;
     height: 450px;
@@ -140,6 +140,40 @@ details nav a:hover {
     font-size: 18px;
     line-height: 1.8;
     color: #555;
+}
+
+/* QUEM SOU EU */
+
+#quem-sou {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 60px auto 0;
+}
+
+#quem-sou-texto {
+    flex: 1;
+}
+
+#quem-sou-texto h2 {
+    margin-bottom: 20px;
+}
+
+#quem-sou-texto p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.quem-sou-imagem {
+    flex: 0 0 350px;
+}
+
+.quem-sou-imagem img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
 }
 
 /* SERVIÇOS */
@@ -404,6 +438,17 @@ button {
 
 }
 
+#formulario-contato p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #d9534f;
+}
+
+#mensagem-sucesso {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
 button:hover {
 
     opacity: .9;
@@ -487,43 +532,55 @@ button:hover {
         height: 220px;
     }
 
-    #descricao {
-        padding: 50px 20px;
+    #quem-sou {
+        flex-direction: column;
+        gap: 30px;
     }
 
-    #descricao h2 {
-        font-size: 24px;
+    .quem-sou-imagem {
+        width: 100%;
+        max-width: 350px;
     }
 
-    #descricao p {
-        font-size: 16px;
-    }
 
-    .servicos-container {
-        grid-template-columns: 1fr;
-    }
 
-    #diferenciais ul {
-        grid-template-columns: 1fr;
-    }
+#descricao {
+    padding: 50px 20px;
+}
 
-    #perguntas summary {
-        font-size: 16px;
-    }
+#descricao h2 {
+    font-size: 24px;
+}
 
-    #perguntas p {
-        font-size: 15px;
-    }
+#descricao p {
+    font-size: 16px;
+}
 
-    .contato-container {
-        grid-template-columns: 1fr;
-    }
+.servicos-container {
+    grid-template-columns: 1fr;
+}
 
-    .footer-container {
-        text-align: center;
-    }
+#diferenciais ul {
+    grid-template-columns: 1fr;
+}
 
-    .footer-container h2 {
-        font-size: 22px;
-    }
+#perguntas summary {
+    font-size: 16px;
+}
+
+#perguntas p {
+    font-size: 15px;
+}
+
+.contato-container {
+    grid-template-columns: 1fr;
+}
+
+.footer-container {
+    text-align: center;
+}
+
+.footer-container h2 {
+    font-size: 22px;
+}
 }

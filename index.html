@@ -24,6 +24,8 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="js/script.js" defer></script>
+
 </head>
 
 <body>
@@ -41,8 +43,9 @@
     </header>
     <main>
         <section id="banner">
-            <h1 id="banner h1">DEVOLVENDO A SUA DIGNIDADE E BEM ESTAR</h1>
-            <img id="banner img" src="c:\Users\jacqu\Downloads\imagem-fisioterapia.jpg" alt="Fisioterapeuta realizando atendimento em paciente">
+            <h1 id="banner-titulo">DEVOLVENDO A SUA DIGNIDADE E BEM ESTAR</h1>
+            <img id="banner-img" src="img/imagem-fisioterapia.jpg"
+                alt="Fisioterapeuta realizando atendimento em paciente">
         </section>
 
         <section id="descricao">
@@ -58,15 +61,29 @@
                 Estou aqui para acompanhar você em cada etapa desse processo, oferecendo cuidado, atenção e dedicação
                 para que você alcance mais saúde e bem-estar.</p>
 
-            <h2>Quem Sou Eu?</h2>
-            <p>Sou Jacqueline da Silva Libardi, fisioterapeuta, e acredito que cada pessoa merece ser cuidada de forma
-                única.
-                Meu propósito é oferecer um atendimento acolhedor e personalizado, buscando entender não apenas a queixa
-                do paciente, mas também sua rotina, suas necessidades e seus objetivos. Através da fisioterapia, procuro
-                contribuir para a recuperação da mobilidade, o alívio de desconfortos e a melhora da qualidade de vida.
-                Para mim, cada paciente possui uma história diferente. Por isso, meu trabalho é baseado em escuta,
-                atenção e cuidado individualizado, sempre buscando proporcionar uma experiência segura e humanizada
-                durante todo o processo.</p>
+            <div id="quem-sou">
+                <div id="quem-sou-texto">
+                    <h2>Quem Sou Eu?</h2>
+                    <p>Sou Jacqueline da Silva Libardi, fisioterapeuta, e acredito que cada pessoa merece ser cuidada de
+                        forma
+                        única.
+                        Meu propósito é oferecer um atendimento acolhedor e personalizado, buscando entender não apenas
+                        a queixa
+                        do paciente, mas também sua rotina, suas necessidades e seus objetivos. Através da fisioterapia,
+                        procuro
+                        contribuir para a recuperação da mobilidade, o alívio de desconfortos e a melhora da qualidade
+                        de vida.
+                        Para mim, cada paciente possui uma história diferente. Por isso, meu trabalho é baseado em
+                        escuta,
+                        atenção e cuidado individualizado, sempre buscando proporcionar uma experiência segura e
+                        humanizada
+                        durante todo o processo.</p>
+                </div>
+                <div class="quem-sou-imagem">
+                    <img src="img/jacqueline.jpeg"
+                        alt="Jacqueline da Silva Libardi, fisioterapeuta">
+                </div>
+            </div>
         </section>
 
         <section id="servicos">
@@ -186,18 +203,23 @@
 
                 <div class="formulario">
 
-                    <form>
+                    <form id="formulario-contato">
 
                         <label for="nome">Nome</label>
                         <input type="text" id="nome" placeholder="Seu nome">
+                        <p id="erro-nome"></p>
 
                         <label for="email">E-mail</label>
                         <input type="email" id="email" placeholder="Seu e-mail">
+                        <p id="erro-email"></p>
 
                         <label for="mensagem">Mensagem</label>
                         <textarea id="mensagem" rows="6" placeholder="Digite sua mensagem"></textarea>
+                        <p id="erro-mensagem"></p>
 
-                        <button type="submit">Enviar</button>
+                        <button id="botao-enviar" type="submit">Enviar</button>
+
+                        <p id="mensagem-sucesso"></p>
 
                     </form>
 
@@ -209,9 +231,9 @@
 
                     <p>📧 jacquelibardi60@gmail.com</p>
 
-                    <p>📱 (27) 99909-9866</p>
+                    <p>📱 (28) 99909-9866</p>
 
-                    <a class="whatsapp" href="https://wa.me/5527999099866" target="_blank">
+                    <a class="whatsapp" href="https://wa.me/5528999099866" target="_blank">
 
                         Falar pelo WhatsApp
 
@@ -241,7 +263,7 @@
                     <p>
                         Telefone:
                         <a href="tel:+5527999099866">
-                            (27) 99909-9866
+                            (28) 99909-9866
                         </a>
                     </p>
                 </address>
